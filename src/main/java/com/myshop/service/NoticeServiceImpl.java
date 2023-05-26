@@ -10,10 +10,10 @@ import com.myshop.dto.NoticeDTO;
 
 @Service
 public class NoticeServiceImpl implements NoticeService {
-	
+
 	@Autowired
 	public NoticeDAO noticeDao;
-
+	
 	@Override
 	public List<NoticeDTO> noticeList() throws Exception {
 		return noticeDao.noticeList();
@@ -37,5 +37,10 @@ public class NoticeServiceImpl implements NoticeService {
 	@Override
 	public void noticeEdit(NoticeDTO dto) throws Exception {
 		noticeDao.noticeEdit(dto);
+	}
+
+	@Override
+	public void visitCount(int no) throws Exception {
+		noticeDao.visitCount(no);	
 	}
 }

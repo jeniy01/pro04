@@ -1,6 +1,7 @@
 package com.myshop.dao;
 
 import java.util.List;
+
 import com.myshop.dto.NoticeDTO;
 
 public interface NoticeDAO {
@@ -9,4 +10,5 @@ public interface NoticeDAO {
 	public void noticeInsert(NoticeDTO dto) throws Exception;
 	public void noticeDelete(int no) throws Exception;
 	public void noticeEdit(NoticeDTO dto) throws Exception;
+	public void visitCount(int no) throws Exception;
 }
