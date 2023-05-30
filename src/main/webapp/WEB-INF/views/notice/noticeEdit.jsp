@@ -44,7 +44,7 @@
 			      		<tr>
 			      			<td colspan="2">
 			      				<input type="submit" class="submit success button" value="글 수정" >
-			      				<a class="button" href="${path1 }/board/list.do">글 목록</a>
+			      				<a class="button" href="${path1 }/notice/list.do">글 목록</a>
 			      			</td>
 			      		</tr>
 			      	</tbody>
