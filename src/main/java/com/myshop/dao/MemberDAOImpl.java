@@ -2,8 +2,11 @@ package com.myshop.dao;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Repository;
 
 import com.myshop.dto.MemberDTO;
@@ -13,6 +16,9 @@ public class MemberDAOImpl implements MemberDAO {
 
 	@Autowired
 	SqlSession sqlSession;
+	
+	@Inject
+	BCryptPasswordEncoder pwdEncoder;
 	
 	//회원 목록
 	@Override
@@ -42,7 +48,8 @@ public class MemberDAOImpl implements MemberDAO {
 	@Override
 	public MemberDTO loginCheck(MemberDTO mdto) throws Exception {
 		MemberDTO member = sqlSession.selectOne("member.loginCheck", mdto);
-		if(member.getId().equals(mdto.getId()) && member.getPw().equals(mdto.getPw())) {
+		boolean loginSuccess = pwdEncoder.matches(mdto.getPw(), member.getPw());
+		if(member.getId().equals(mdto.getId()) && loginSuccess) {
 			return member;
 		} else {
 			member = null;

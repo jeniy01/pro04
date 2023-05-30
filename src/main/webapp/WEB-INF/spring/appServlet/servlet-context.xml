@@ -15,10 +15,9 @@
 	<!--  접근 가능한 자원에 대한 설정 -->
 	<resources mapping="/resources/**" location="/resources/" />
 	<resources mapping="/data/**" location="/data/" />
-	
+
 	<resources mapping="/include/**" location="/WEB-INF/views/include" />
 	<resources mapping="/board/**" location="/WEB-INF/views/board" />
-	<resources mapping="/notice/**" location="/WEB-INF/views/notice" />
 	<resources mapping="/member/**" location="/WEB-INF/views/member" />
 	<resources mapping="/reservate/**" location="/WEB-INF/views/reservate" />
 	<resources mapping="/qna/**" location="/WEB-INF/views/qna" />
@@ -26,7 +25,6 @@
 	<resources mapping="/util/**" location="/WEB-INF/views/util" />
 	<resources mapping="/sample/**" location="/WEB-INF/views/sample" />
 	<resources mapping="/check/**" location="/WEB-INF/views/check" />
-	<resources mapping="/user/**" location="/WEB-INF/views/user" />
 	<resources mapping="/free/**" location="/WEB-INF/views/free" />
 
 	<!-- 리졸버에 대한 접두사와 접미사 설정 -->
@@ -42,11 +40,25 @@
 	
 	<!-- 멀티파트 업로드 디렉토리 지정 -->
 	<beans:bean id="uploadPath" class="java.lang.String">
+		<!-- <beans:constructor-arg value="/resources/upload"></beans:constructor-arg> -->
 		<beans:constructor-arg value="D:\kim1\spring1\pro04\src\main\webapp\resources\upload"></beans:constructor-arg>
 	</beans:bean>
-	
+
 	<context:component-scan base-package="com.myshop.*" />
 	
-	
-	
+	<!-- 인터셉터 로그인을 해야만 지정한 권한의 기능을 수행할 수 있도록 하는 제한점 -->
+	<beans:bean id="loginIntercepter" class="com.myshop.util.LoginCheckIntercepter" />
+	<beans:bean id="adminIntercepter" class="com.myshop.util.AdminIntercepter" />
+	<interceptors>
+		<interceptor>
+			<mapping path="/notice/insert.do" />
+			<mapping path="/notice/edit.do" />
+			<beans:ref bean="loginIntercepter" />
+		</interceptor>
+		<interceptor>
+			<mapping path="/member/list.do" />
+			<mapping path="/member/info.do" />
+			<beans:ref bean="adminIntercepter" />
+		</interceptor>
+	</interceptors>
 </beans:beans>

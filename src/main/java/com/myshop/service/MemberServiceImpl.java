@@ -2,7 +2,12 @@ package com.myshop.service;
 
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.myshop.dao.MemberDAO;
@@ -13,6 +18,9 @@ public class MemberServiceImpl implements MemberService {
 
 	@Autowired
 	MemberDAO memberDao;
+	
+	@Inject
+	BCryptPasswordEncoder pwdEncoder;
 	
 	//회원 목록
 	@Override
@@ -46,8 +54,20 @@ public class MemberServiceImpl implements MemberService {
 
 	//로그인 : AJax로 서비스에서 로그인 처리
 	@Override
-	public MemberDTO login(MemberDTO mdto) throws Exception {
-		return memberDao.login(mdto);
+	public boolean login(HttpServletRequest req) throws Exception {
+		boolean loginSuccess = false;
+		MemberDTO mdto = new MemberDTO();
+		mdto.setId(req.getParameter("id"));
+		mdto.setPw(req.getParameter("pw"));
+		HttpSession session = req.getSession();
+		MemberDTO login = memberDao.login(mdto);
+		loginSuccess = pwdEncoder.matches(mdto.getPw(), login.getPw());
+		if(loginSuccess && login!=null) {
+			session.setAttribute("member", login);
+			session.setAttribute("sid", mdto.getId());
+			loginSuccess = true;
+		}
+		return loginSuccess;
 	}
 
 	//회원 가입
