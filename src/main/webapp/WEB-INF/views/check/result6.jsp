@@ -14,8 +14,8 @@
 <body>
 	<h2>결과6</h2>
 	<div>
-		<p>${memberVO.id }</p>
-		<p>${memberVO.pw }</p>
+		<p>${mem.id }</p>
+		<p>${mem.pw }</p>
 	</div>
 </body>
 </html>
