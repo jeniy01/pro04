@@ -9,13 +9,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>POST4</title>
+	<title>에러 페이지</title>
 </head>
 <body>
-	<h2>POST 방식으로 데이터 받아오기4</h2>
+	<h2>에러페이지</h2>
 	<div>
-		<p>${id}</p>
-		<p>${pw}</p>
+		<p>아이디 또는 비밀번호를 입력하지 않으셨거나 비밀번호 형식이 잘못되었습니다.</p>
 	</div>
 </body>
 </html>

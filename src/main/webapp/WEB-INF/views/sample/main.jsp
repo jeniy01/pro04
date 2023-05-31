@@ -53,8 +53,8 @@
 	<h2>POST 방식1</h2>
 	<div>
 		<form name="post1" action="./post1" method="post">
-			id : <input type="text" name="id" id="id" required /><br>
-			pw : <input type="password" name="pw" id="pw" required /><br><br>
+			id : <input type="text" name="id" id="id1" required /><br>
+			pw : <input type="password" name="pw" id="pw1" required /><br><br>
 			<input type="submit" value="post1"/>
 		</form>
 	</div>
@@ -63,8 +63,8 @@
 	<h2>POST 방식2</h2>
 	<div>
 		<form name="post2" action="./post2" method="post">
-			id : <input type="text" name="id" id="id" required /><br>
-			pw : <input type="password" name="pw" id="pw" required /><br><br>
+			id : <input type="text" name="id" id="id2" required /><br>
+			pw : <input type="password" name="pw" id="pw2" required /><br><br>
 			<input type="submit" value="post2"/>
 		</form>
 	</div>
@@ -73,8 +73,8 @@
 	<h2>POST 방식3</h2>
 	<div>
 		<form name="post3" action="./post3" method="post">
-			id : <input type="text" name="id" id="id" required /><br>
-			pw : <input type="password" name="pw" id="pw" required /><br><br>
+			id : <input type="text" name="id" id="id3" required /><br>
+			pw : <input type="password" name="pw" id="pw3" required /><br><br>
 			<input type="submit" value="post3"/>
 		</form>
 	</div>
@@ -83,8 +83,8 @@
 	<h2>POST 방식4</h2>
 	<div>
 		<form name="post4" action="./post4" method="post">
-			id : <input type="text" name="id" id="id" required /><br>
-			pw : <input type="password" name="pw" id="pw" required /><br><br>
+			id : <input type="text" name="id" id="id4" required /><br>
+			pw : <input type="password" name="pw" id="pw4" required /><br><br>
 			<input type="submit" value="post4"/>
 		</form>
 	</div>
@@ -93,8 +93,8 @@
 	<h2>POST 방식5</h2>
 	<div>
 		<form name="post5" action="./post5" method="post">
-			id : <input type="text" name="id" id="id" required /><br>
-			pw : <input type="password" name="pw" id="pw" required /><br><br>
+			id : <input type="text" name="id" id="id5" required /><br>
+			pw : <input type="password" name="pw" id="pw5" required /><br><br>
 			<input type="submit" value="post5"/>
 		</form>
 	</div>
@@ -103,8 +103,8 @@
 	<h2>POST 방식6</h2>
 	<div>
 		<form name="post6" action="./post6" method="post">
-			id : <input type="text" name="id" id="id" required /><br>
-			pw : <input type="password" name="pw" id="pw" required /><br><br>
+			id : <input type="text" name="id" id="id6" required /><br>
+			pw : <input type="password" name="pw" id="pw6" required /><br><br>
 			<input type="submit" value="post6"/>
 		</form>
 	</div>
@@ -113,8 +113,8 @@
 	<h2>POST 방식7</h2>
 	<div>
 		<form name="post7" action="./post7" method="post">
-			id : <input type="text" name="id" id="id" required /><br>
-			pw : <input type="password" name="pw" id="pw" required /><br><br>
+			id : <input type="text" name="id" id="id7" required /><br>
+			pw : <input type="password" name="pw" id="pw7" required /><br><br>
 			<input type="submit" value="post7"/>
 		</form>
 	</div>

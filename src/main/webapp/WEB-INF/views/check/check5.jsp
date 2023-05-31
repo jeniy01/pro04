@@ -9,13 +9,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>POST4</title>
+	<title>폼 유효성 검사5</title>
 </head>
 <body>
-	<h2>POST 방식으로 데이터 받아오기4</h2>
-	<div>
-		<p>${id}</p>
-		<p>${pw}</p>
-	</div>
+	<h2>FORM 유효성 검사5</h2>
+	<form action="./check5" method="post">
+	    id : <input type="text" name="id" id="id"/><br><br>
+	    pw : <input type="password" name="pw" id="pw" /><br><br>
+	    <button class="btn" type="submit"> 전송 </button>
+	</form>
 </body>
 </html>

@@ -3,19 +3,20 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri = "http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>POST4</title>
+	<title>결과4</title>
 </head>
 <body>
-	<h2>POST 방식으로 데이터 받아오기4</h2>
+	<h2>결과4</h2>
 	<div>
-		<p>${id}</p>
-		<p>${pw}</p>
+		<p>${member.id }</p>
+		<p>${member.pw }</p>
 	</div>
 </body>
 </html>

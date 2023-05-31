@@ -9,13 +9,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>POST4</title>
+	<title>결과3</title>
 </head>
 <body>
-	<h2>POST 방식으로 데이터 받아오기4</h2>
+	<h2>결과3</h2>
 	<div>
-		<p>${id}</p>
-		<p>${pw}</p>
+		<p>${id }</p>
+		<p>${pw }</p>
 	</div>
 </body>
 </html>
