@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>다온 쇼핑몰</title>
+	<title>건강제약</title>
 	<!-- 헤드 부분 인클루드 -->
     <jsp:include page="./include/head.jsp"></jsp:include>
 </head>
@@ -17,7 +17,8 @@
  	<jsp:include page="./include/hd.jsp"></jsp:include>
 </header>
 <div class="content container" id="content" style="min-height:500px;">
-	<h2 class="title">메인</h2>
+	<h2 class="title" style="text-align:center; padding-top:100px;">Greater Vaule For Your Life</h2>
+	<p style="text-align:center;">끊임없는 연구개발을 통해 고객의 건강한 삶을 위한 더 나은 가치를 만들어갑니다.</p>
 </div>
 <footer id="footer" class="footer-nav row expanded collapse">
 	<!-- 푸터 부분 인클루드 -->

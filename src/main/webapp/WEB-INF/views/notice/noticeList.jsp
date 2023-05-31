@@ -25,18 +25,22 @@
 	      <div class="container">
 				<table class="table">
 					<thead>
-						<tr><th>연번</th><th>제목</th><th>작성자</th></tr>
+						<tr>
+							<th width="100">연번</th>
+      						<th width="200">제목</th>
+      						<th width="200">작성자</th>
+						</tr>
 					</thead>
 					<tbody>
-						<c:forEach var="notice" items="${noticeList }" varStatus="status">
-						<tr><td>${notice.no }</td>
-						<td><a href="${path1 }/notice/detail.do?no=${notice.no }">${notice.title }</a></td>
-						<td>${notice.author }</td></tr>
+						<c:forEach var="notice" items="${noticeList}" varStatus="status">
+						<tr><td>${notice.no}</td>
+						<td><a href="${path1}/notice/detail.do?no=${notice.no}">${notice.title}</a></td>
+						<td>${notice.author}</td></tr>
 						</c:forEach>
 						<tr>
 							<td colspan="3">
 								<a href="javascript:history.go(-1)" class="button" >뒤로 가기</a>
-								<a href="${path1 }/notice/insert.do" class="button" >글 등록</a>
+								<a href="${path1}/notice/insert.do" class="button" >글 등록</a>
 							</td>
 						</tr>
 					</tbody>

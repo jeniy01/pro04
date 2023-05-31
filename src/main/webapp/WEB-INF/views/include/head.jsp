@@ -33,12 +33,12 @@ ul { list-style:none; }
 .footer-nav {	background-color:#2d2d2d; height:80px; box-sizing:border-box; overflow:hidden; }
 .footer-nav > article { clear:both; width:1200px; margin:0px auto; height:80px; }
 .footer-nav > article > div { float:left; }
-.footer-nav-left { color:#fff; width:25%; line-height:80px; }
+.footer-nav-left { color:#fff; line-height:80px; }
 .footer-nav-center {
 	width:50%;
 }
 .footer-nav-right {
-	width:25%; 
+	width:25%;
 }
 #footer .footer-nav-left .footer-copyright {
 	line-height:80px;
@@ -51,6 +51,6 @@ ul { list-style:none; }
 #footer > article > div.footer-nav-right > ul > li.footer-nav-item {
 	width:25%; height:25%;
 }
-.orbit-slide {    width: 100vw; }
+.orbit-slide { width: 100vw; }
 .orbit-slide img { display:block; width:100vw; }
 </style>

@@ -11,20 +11,20 @@
    <div class="top-bar-left" id="gnb">
    	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
      <ul class="dropdown menu" data-dropdown-menu>
-       <li class="menu-text"><a href="/" class="logo">MyShop</a></li>
-       <li><a href="#">Company</a></li>
-       <li><a href="#">Product</a></li>
-       <li><a href="#">Service</a></li>
+       <li class="menu-text"><a href="${path1 }/#" class="logo">건강제약</a></li>
+       <li><a href="#">회사소개</a></li>
+       <li><a href="#">제품소개</a></li>
+       <li><a href="#">연구개발</a></li>
        <li class="has-submenu">
-			<a href="#">Community</a>
+			<a href="#">홍보센터</a>
 			<ul class="submenu menu vertical" data-submenu>
 				<li><a href="${path1 }/notice/list.do">공지사항</a></li>
 				<li><a href="#">자료실</a></li>
 				<li><a href="#">질문 및 답변</a></li>
-				<li><a href="${path1 }/free/list.do">자유게시판</a></li>
+				<li><a href="#">자유게시판</a></li>
 			</ul>
     	</li>
-       <li><a href="#">Human</a></li>
+       <!-- <li><a href="#">Human</a></li> -->
      </ul>
    </div>
             

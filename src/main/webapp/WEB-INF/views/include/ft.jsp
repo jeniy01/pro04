@@ -7,18 +7,18 @@
 <!-- 푸터 내용 기술 -->
 <article class="ft_wrap">
 	<div class="footer-nav-left">
-	  <p class="footer-copyright">©2022 Company WebApplication</p>
+	  <p class="footer-copyright">Copyright 2023 GUNGANG PHARMACEUTICAL All rights reserverd.</p>
 	</div>
 	<div class="footer-nav-center">
 	  <ul class="footer-nav-menu">
 	    <li class="footer-nav-item">
-	      <a href="https://get.foundation/develop/getting-started.html">Building Blocks</a>
+	      <a href="">개인정보처리방침</a>
 	    </li>
 	    <li class="footer-nav-item">
-	      <a href="https://get.foundation/get-involved/support.html">Get Involved</a>
+	      <a href="">이용약관</a>
 	    </li>
 	    <li class="footer-nav-item">
-	      <a href="https://get.foundation/sites/docs/">Docs</a>
+	      <a href="">고객지원</a>
 	    </li>
 	  </ul>
 	</div>

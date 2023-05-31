@@ -20,7 +20,7 @@
 	
 	<div class="content" id="content">
 	    <div class="row column text-center">
-	      <h2 class="h1">공지사항 글 수정</h2>
+	      <h2 class="h1">공지사항 글 상세보기</h2>
 	      <hr>
 	      <div class="container">
 				<table class="table">

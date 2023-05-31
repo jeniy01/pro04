@@ -23,14 +23,15 @@
     <div class="row column text-center">
       <h2 class="h1">회원 목록</h2>
       <hr>
-      <table>
+		<div class="container">
+		<table class="table">
       	<thead>
       		<tr>
-      			<th width="80">No</th>
-      			<th width="100">ID</th>
-      			<th width="100">NAME</th>
-      			<th>RegDate</th>
-      			<th>Point</th>
+      			<th width="100">No</th>
+      			<th width="200">ID</th>
+      			<th width="200">NAME</th>
+      			<th width="200">RegDate</th>
+      			<th width="100">Point</th>
       		</tr>
       	</thead>
       	<tbody>
@@ -44,9 +45,9 @@
       		</tr>
       	</c:forEach>	
       	</tbody>
-      </table>
-    </div>
-	
+      	</table>
+    	</div>
+	</div>
     <footer id="footer" class="footer-nav">
     	<!-- 푸터 부분 인클루드 -->
     	<jsp:include page="../include/ft.jsp"></jsp:include>
