@@ -87,13 +87,17 @@ public class MemberController {
 	
 	//로그인 	- 컨트롤러에서 세션 처리(로그인시 저장된 비밀번호와 입력된 비밀번호를 비교 - matches)
 	@RequestMapping(value="signin.do", method = RequestMethod.POST)
-	public String memberSignin(@RequestParam String id, @RequestParam String pw, HttpServletRequest request, RedirectAttributes rttr) throws Exception {
+	public String memberSignin(@RequestParam String id, @RequestParam String pw, HttpServletRequest req, RedirectAttributes rttr) throws Exception {
 		session.invalidate();
 		MemberDTO mdto = new MemberDTO();
 		mdto.setPw(pw);  //mdto.setPw(request.getParameter("pw"));
 		mdto.setId(id);	//mdto.setPw(request.getParameter("id"));
 		MemberDTO login = memberService.signIn(mdto);
-		boolean loginSuccess = pwdEncoder.matches(mdto.getPw(), login.getPw());
+		//boolean loginSuccess = pwdEncoder.matches(mdto.getPw(), login.getPw());
+		boolean loginSuccess = false;
+		if(login!=null) {
+			loginSuccess = pwdEncoder.matches(mdto.getPw(), login.getPw());
+		}
 		if(login!=null && loginSuccess) {
 			session.setAttribute("member", login);
 			session.setAttribute("sid", id);

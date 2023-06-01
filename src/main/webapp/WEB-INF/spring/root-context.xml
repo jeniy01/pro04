@@ -40,4 +40,8 @@
 	
 	<!-- @Transactional 어노테이션 처리 -->
 	<tx:annotation-driven transaction-manager="transactionManager" />
+	
+	<!-- xml 기반으로 자동으로 프록시를 생성하도록 설정한다. -->
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	
 </beans>

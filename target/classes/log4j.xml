@@ -19,6 +19,10 @@
 	<!-- TRACE : 실행 내용이나 추적할 경로 등을 표시 -->
 	
 	<!-- Application Loggers -->
+	<logger name="com.myshop">
+		<level value="debug" />
+	</logger>
+	
 	<logger name="com.myshop.base">
 		<level value="info" />
 	</logger>
@@ -39,9 +43,6 @@
 		<level value="info" />
 	</logger>
 	
-	<logger name="com.myshop.util">
-		<level value="info" />
-	</logger>
 	
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
